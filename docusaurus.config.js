@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'About Old Insurance Maps.net',
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://about.oldinsurancemaps.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mradamcox/loc-insurancemaps-website',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/mradamcox/loc-insurancemaps-website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,10 +57,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'OIMaps',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Old Insurance Maps',
+          src: 'img/noun_Map_heavy-colored-with-roadlines.png',
         },
         items: [
           {
@@ -70,15 +70,16 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/overview', label: 'Sanborn Maps', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/mradamcox/loc-insurancemaps-website',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
+        // style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -120,11 +121,11 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Adam Cox.`,
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        // darkTheme: darkCodeTheme,
       },
     }),
 };
