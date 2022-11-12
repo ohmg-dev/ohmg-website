@@ -29,7 +29,7 @@ Choosing GeoNode as the base for this georeferencing platform provided the follo
 
 This app is designed as a standalone GeoNode extension. In theory, anyone could install it within their own GeoNode installation, independent of the LOC app described below (please [open a ticket](https://github.com/mradamcox/loc-insurancemaps/issues) if you are interested in doing so).
 
-This app facilitates the actual georeferencing process, i.e. it allows users to georeference Documents in the GeoNode CMS, turning them into raster Layers (GeoTIFFs). It consists of three user-accessible tool interfaces, as well as a new summary tab in the Layer and Document detail pages. A quick summary of these tools follows, but more detailed documentation on how to use each one can be found in the [Georeferencing Process](/georeferencing-process) section.
+This app facilitates the actual georeferencing process, i.e. it allows users to georeference Documents in the GeoNode CMS, turning them into raster Layers (GeoTIFFs). It consists of three user-accessible tool interfaces, as well as a new summary tab in the Layer and Document detail pages. A quick summary of these tools follows, but more detailed documentation on how to use each one can be found in the [Georeferencing Process](/docs/georeferencing-process) section.
 
 ### Georeferencing in Stages
 

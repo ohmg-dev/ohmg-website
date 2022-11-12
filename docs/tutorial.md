@@ -15,11 +15,11 @@ Keep in mind that these steps are designed to facilitate a collaborative environ
     <figcaption>Alexandria, Louisiana in 1900. <a href="https://oldinsurancemaps.net/viewer/alexandria-la" target="_blank">web map detail</a></figcaption>
 </figure>
 
-The end result is a web map which can be <a href="https://oldinsurancemaps.net/maps/203/view" target="_blank">viewed in the site</a> or embedded with an `<iframe>` on any web page. Also, any of the individual layers can be used in other web maps or geospatial software (as WMS).
+The end result is a web map which can be viewed in the site or embedded with an `<iframe>` on any web page. Also, any of the individual layers can be used in other web maps or geospatial software (as WMS).
 
 ## Load the Volume
 
-From the [Volumes page]("https://oldinsurancemaps.net"), we begin by finding the city and year we are interested in.
+From the [Volumes page](https://oldinsurancemaps.net/browse), we begin by finding the city and year we are interested in.
 
 ![Choosing Alexandria on the left reveals a list of all available volumes. Out of 11 total volumes, 6 are available to be loaded.](../static/img/alex-search-volumes.png)
 
