@@ -33,13 +33,51 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'Powered by React',
+    Svg: require('@site/static/icons/noun_map pin_1832932.svg').default,
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
 ];
+
+// function Feature({Svg, title, description}) {
+//   return (
+//     <div className={clsx('col col--3')}>
+//       <div className="text--center">
+//         <Svg className={styles.featureSvg} role="img" />
+//       </div>
+//       <div className="text--center padding-horiz--md">
+//         <h3>{title}</h3>
+//         <p>{description}</p>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default function HomepageFeatures()  {
+//   return (
+//     <section className={styles.features}>
+//       <div className="container">
+//         <div className="row">
+//           {FeatureList.map((props, idx) => (
+//             <Feature key={idx} {...props} />
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Svg className="svg-icon" role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -49,16 +87,12 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures()  {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
+    <section className="front-page">
+      {FeatureList.map((props, idx) => (
+        <Feature key={idx} {...props} />
+      ))}
     </section>
   );
 }

@@ -1,5 +1,12 @@
 # Tutorial: Alexandria, La. | 1900
 
+:::danger Work in Progress
+
+This site is still under construction and a bit fragmented. Please be patient!
+
+:::
+
+
 This tutorial covers the entire process using the [Alexandria, La. | 1900](https://www.loc.gov/resource/g4014am.g032671900/?st=gallery) volume as an example.
 
 The complete workflow is:
@@ -9,11 +16,6 @@ The complete workflow is:
 3. [Georeference the prepared Documents](#georeference-the-prepared-documents)
 
 Keep in mind that these steps are designed to facilitate a collaborative environment. While you *could* complete an entire volume in one session, you can also just do individual steps here and there, allowing others to fill in around. Georeferencing and trimming (3 & 5 above) are both iterative processes, so you can come back later to improve upon your own work, or someone else's.
-
-<figure>
-    <iframe height="400px;" style={{maxWidth:'700px', width:'100%'}} src="https://oldinsurancemaps.net/viewer/alexandria-la"></iframe>
-    <figcaption>Alexandria, Louisiana in 1900. <a href="https://oldinsurancemaps.net/viewer/alexandria-la" target="_blank">web map detail</a></figcaption>
-</figure>
 
 The end result is a web map which can be viewed in the site or embedded with an `<iframe>` on any web page. Also, any of the individual layers can be used in other web maps or geospatial software (as WMS).
 

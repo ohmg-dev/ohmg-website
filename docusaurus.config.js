@@ -6,18 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'About Old Insurance Maps.net',
-  tagline: 'Dinosaurs are cool',
+  title: 'About LaHMG',
+  tagline: 'A crowdsourcing platform for georeferencing content from the Sanborn maps collection at the Library of Congress.',
   url: 'https://about.oldinsurancemaps.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'about.oldinsurancemaps.net'}],
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: '', // Usually your GitHub org/user name.
+  projectName: '', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -41,10 +43,6 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/mradamcox/loc-insurancemaps-website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,32 +55,32 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'OIMaps',
+        title: 'About LaHMG',
         logo: {
-          alt: 'Old Insurance Maps',
+          alt: 'About LaHMG',
           src: 'img/noun_Map_heavy-colored-with-roadlines.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'overview',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Resources',
           },
+          {to: '/faq', label: 'FAQs', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/overview', label: 'Sanborn Maps', position: 'left'},
+          {to: '/contact', label: 'Contact', position: 'left'},
           {
-            href: 'https://github.com/mradamcox/loc-insurancemaps-website',
-            label: 'GitHub',
+            href: 'https://oldinsurancemaps.net',
+            label: 'Main Site',
             position: 'right',
           },
         ],
       },
       footer: {
-        // style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Resources',
             items: [
               {
                 label: 'Tutorial',
@@ -116,16 +114,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mradamcox/loc-insurancemaps',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Adam Cox.`,
+        copyright: `Copyright © ${new Date().getFullYear()}`,
       },
       prism: {
         theme: lightCodeTheme,
-        // darkTheme: darkCodeTheme,
+        darkTheme: darkCodeTheme,
       },
     }),
 };

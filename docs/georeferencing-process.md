@@ -1,5 +1,12 @@
 # Georeferencing the Maps
 
+:::danger Work in Progress
+
+This site is still under construction and a bit fragmented. Please be patient!
+
+:::
+
+
 !!! note
     These steps are best carried out on a laptop/desktop computer, though a nimble mobile user should be able to perform them as well.
 
