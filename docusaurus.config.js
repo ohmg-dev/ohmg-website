@@ -83,8 +83,12 @@ const config = {
             title: 'Resources',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/overview',
+                label: 'FAQs',
+                to: '/faq',
+              },
+              {
+                label: 'Sanborn Maps',
+                to: '/docs/category/sanborn-maps',
               },
             ],
           },

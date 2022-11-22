@@ -4,42 +4,42 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Volume Management',
     Svg: require('@site/static/icons/noun_UprightBook_2089467.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A <a href="https://oldinsurancemaps.net/loc/sanborn03275_003/?utm_source=documentation-link">Volume Summary</a> page
+        aggregates all sheets from a Sanborn map edition (or volume) for an
+        overview of georeferencing progress.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Architectural Detail',
     Svg: require('@site/static/icons/noun_Scroll_2592600.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Sanborn map sheets contain extensive information about every building at a very large scale (1:100 or 1:200).
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Geospatial Layers',
     Svg: require('@site/static/icons/noun_Layer_2583171.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Users will georeference map sheets one-by-one, eventually creating a continuous mosaic out of the
+        volume.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Explore the Mosaics',
     Svg: require('@site/static/icons/noun_map pin_1832932.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The mosaics can be used in web maps, as below, to provide a window to what American
+        cities looked like at the turn of the 20th century.
       </>
     ),
   },
@@ -75,7 +75,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div>
+    <div style={{minWidth:'25%'}}>
       <div className="text--center">
         <Svg className="svg-icon" role="img" />
       </div>
