@@ -10,6 +10,8 @@ This site is still under construction and a bit fragmented. Please be patient!
 
 # A Brief Summary
 
+[test internal link](../navigating-the-site/browsing#browse-by-map)
+
 The Sanborn Map Company surveyed and mapped American cities from the late 1860's through the 1950's, creating city atlases and selling them to insurance companies on a subscription basis. The extensive details they recorded for each building&mdash;commercial use, construction materials, exact locations of heat sources, to name but a few&mdash;provided insurance companies with the information they needed to geographically visualize and balance their risk.
 
 Map production had begun to wind down in the 1950s, but the usefulness of the collection as a historical reference (far beyond its original purpose) was already recognized. In all, the company mapped over 12,000 American communities, generally returning to each one every 5-7 years to create a full update. The result is an unparalled cartographic record of urban development in the U.S., and an archive with much potential.

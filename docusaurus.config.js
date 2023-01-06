@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'About LaHMG',
-  tagline: 'A crowdsourcing platform for georeferencing content from the Sanborn maps collection at the Library of Congress.',
+  tagline: 'Documentation, blog, and general information about the Louisiana Historical Map Georeferencer platform. Visit the main site at oldinsurancemaps.net.',
   url: 'https://about.oldinsurancemaps.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -55,57 +55,58 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'About LaHMG',
+        title: 'About',
         logo: {
-          alt: 'About LaHMG',
+          alt: 'About',
+          href: '/',
           src: 'img/noun_Map_heavy-colored-with-roadlines.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'overview',
+            docId: 'index',
             position: 'left',
-            label: 'Resources',
+            label: 'Docs',
           },
-          {to: '/faq', label: 'FAQs', position: 'left'},
+          {to: '/faq', label: 'FAQ', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
           {
             href: 'https://oldinsurancemaps.net',
-            label: 'Main Site',
-            position: 'right',
+            label: 'Go to LaHMG',
+            position: 'left',
           },
         ],
       },
       footer: {
         links: [
           {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Navigating the Site',
+                to: '/docs/category/navigating-the-site',
+              },
+              {
+                label: 'Making the Mosaics',
+                to: '/docs/category/navigating-the-site',
+              },
+              {
+                label: 'Technical Documentation',
+                to: '/docs/category/technical-docs',
+              },
+            ],
+          },
+          {
             title: 'Resources',
             items: [
               {
-                label: 'FAQs',
+                label: 'FAQ',
                 to: '/faq',
               },
               {
                 label: 'Sanborn Maps',
                 to: '/docs/category/sanborn-maps',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
@@ -117,6 +118,10 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'Contact',
+                to: '/contact',
+              },
+              {
                 label: 'GitHub',
                 href: 'https://github.com/mradamcox/loc-insurancemaps',
               },
@@ -126,6 +131,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()}`,
       },
       prism: {
+        // theme: darkCodeTheme,
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },

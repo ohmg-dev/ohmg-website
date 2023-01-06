@@ -1,3 +1,8 @@
+---
+sidebar-position: 5
+title: "Technical Documentation"
+---
+
 # Tech Overview
 
 :::danger Work in Progress
@@ -48,7 +53,7 @@ One central strategy is a predetermined set of GeoNode "thesaurus keywords" that
 /split/<document_id>		# the splitting interface for a Document
 ```
 
-![The interface for the splitting tool.](../static/img/split-interface.png)
+![The interface for the splitting tool.](../../static/img/split-interface.png)
 
 This interface allows users to "split" a document into smaller pieces, which is necessary if the scanned image has two different maps on it (because each must be georeferenced separately). More generally, this process could be called "Preparation."
 
@@ -62,7 +67,7 @@ If a document does not need to be split, this evaluation can be recorded and it 
 /georeference/<document_id>	# the georeferencing interface for a Document
 ```
 
-![The georeferencing interface.](../static/img/georeference-interface.png)
+![The georeferencing interface.](../../static/img/georeference-interface.png)
 
 The "georeference" interface allows users to create ground control points (GCPs) which are then sent to a backend process and used to warp the document. During the warping process, the Document is assigned the **georeferencing** keyword. Upon completion, a new Layer is created in Geoserver (a GeoTIFF) and registered in Geonode. The Document and Layer are both assigned the keyword **georeferenced**.
 
@@ -70,13 +75,13 @@ The "georeference" interface allows users to create ground control points (GCPs)
 
 In the Document detail and Layer detail pages a new tab is added labeled **Georeference**. This tab provides a summary of all the georeferencing actions that have been performed on that Document or Layer. You can also access the next step in the georeferencing process for the resource from this tab.
 
-![A summary of the georeferencing actions for a document/layer are displayed in this tab.](../static/img/georeference-tab.png)
+![A summary of the georeferencing actions for a document/layer are displayed in this tab.](../../static/img/georeference-tab.png)
 
 ### Search result links
 
 In the search results pages, a list of links are added to each item, allowing quick access to any of the above pages. Only links to actions that are appropriate for that item's georeferencing progress are active.
 
-![Georeference links in a search result item. From left: summary tab, split, georeference, trim, and jump to the corresponding layer. This document has already been georeferenced, so the split link is disabled.](../static/img/search-item.png)
+![Georeference links in a search result item. From left: summary tab, split, georeference, trim, and jump to the corresponding layer. This document has already been georeferenced, so the split link is disabled.](../../static/img/search-item.png)
 
 ----
 
@@ -89,7 +94,7 @@ All interfaces are written using [Svelte](https://svelte.dev). [Mapserver](https
 
 All georeferencing activity is stored in `SessionBase` objects, as implemented through the proxy models `PrepSession`, `GeorefSession`, and `TrimSession`. Each proxy model has its own implementation of a `run()` method which uses the information in the `data` field to perform the appropriate actions.
 
-![Data model for the georeference app.](../static/img/georeference-data-model-sans-links.png)
+![Data model for the georeference app.](../../static/img/georeference-data-model-sans-links.png)
 
 #### Narrative Explanation
 

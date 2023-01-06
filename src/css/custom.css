@@ -4,6 +4,10 @@
  * work well for content-centric websites.
  */
 
+body {
+  font-size: 1.1em;
+}
+
 a {
   text-decoration: underline;
 }
@@ -20,6 +24,12 @@ section.front-page {
   display: flex;
   padding-top: 15px;
 }
+
+
+.button--secondary {
+  margin: 5px;
+}
+
 
 @media (max-width: 996px) {
   section.front-page {
