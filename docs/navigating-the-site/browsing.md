@@ -10,7 +10,7 @@ Generally, each method can be used to find any map in the system, but there are 
 
 ## Browse by Map
 
-Click a point on the map to view its georeferenced Sanborn Maps. Click **view &rarr;** to open the viewer for all volumes at once, or choose a volume/edition to go to its **detailed summary**.
+Click a point on the map to view its georeferenced Sanborn Maps. Click **view &rarr;** to open the [viewer](/docs/navigating-the-site/viewer) for all volumes at once, or choose a volume/edition to go to its detailed summary.
 
 ![Browse by map interface](../../static/img/browse-by-map.png)
 
@@ -36,6 +36,6 @@ On the right, you'll see abbreviated columns holding more detailed information a
 | **P** | Number of prepared prepared documents (i.e. ready to be georeferenced) |
 | **G** | Number of georeferenced documents |
 | **%** | Overall percentage of georeferenced documents from the volume |
-| **MM** | Number of georeferenced layers that are included in the volume's "multimask". Typically the denominator will be one less than the number of georeferenced layers because the multimask will not include the volume's Key Map |
+| **MM** | Number of georeferenced layers that are included in the volume's "multimask". Typically the denominator will be one less than the number of georeferenced layers because the multimask will not include the volume's Key Map. |
 
 Power users can sort on these columns to see where their work can be the most effective.

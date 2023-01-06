@@ -2,17 +2,13 @@
 sidebar_position: 1
 ---
 
-# Preparating Sheets
+# Preparing Sheets
 
-(To Split or Not To Split)
+Before a volume's sheet can be georeferenced, it must be visually evaluated to determine whether it contains more than one part of town in it. If it does, each of these parts must be split into separate documents.
 
-=== "Basic concept"
-    Before a Document can be georeferenced, it must be visually evaluated to determine whether it contains more than one part of town in it. If it does, each of these parts must be split into separate Documents.
+Here's a quick example of using the splitting interface to cut a sheet into three separate documents. *It is kind of a sloppy example, please be a bit more exact that this if you can!*
 
-=== "Tell me more..."
-    When an image is georeferenced, as you'll see below, control points are made that link pixel coordinates on the image with latitude/longitude coordinates on the earth. This means that a set of control points must only be linked to a specific geographic area, i.e. a single file.
-
-![The splitting interface, ready to split this document into two new documents.](../../static/img/split-interface.png)
+![The splitting interface, ready to split this document into three new documents.](../../static/img/alex-split.gif)
 
 ## Background
 

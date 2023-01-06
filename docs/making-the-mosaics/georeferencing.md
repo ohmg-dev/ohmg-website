@@ -2,19 +2,17 @@
 sidebar_position: 2
 ---
 
-# Georeferencing the Maps
+# Georeferencing the Documents
 
-=== "Basic concept"
-    "Georeferencing" is the process that is needed to overlay a scanned historical map onto a modern web map, and it must be performed for each Document individually.
+"Georeferencing" is the process that embded geospatial metadata into a historical map so it can be added to a modern web map or other GIS software.
 
-=== "Tell me more..."
-    Georeferencing works by using "ground control points" to embed geospatial information into an image file and turn it into a geosptial dataset. A ground control point consists of two coordinate pairs: one pair that represents the XY pixel location on the document, and a corresponding latitude/longitude coordinate that represents a point on earth.
+Users perform this task by creating "ground control points" that link features on the old map (XY pixel locations on the document) with latitude/longitude coordinates was represented on the web map.
 
-![The georeferencing interface, with 3 control points added and the preview visible.](../../static/img/georeference-interface.png)
+![The georeferencing interface, with 3 control points added and the preview visible.](../../static/img/alex-georef.gif)
 
 ## Background
 
-Use this interface to create the **ground control points** that will be used to georeference this document. Cßreating a ground control point requires two clicks&mdash;once in the left panel and once in the right. This records a linkage between a spot on the original map document and the real-world latitude/longitude coordinates for that location.
+Use this interface to create the **ground control points** that will be used to georeference this document. Creating a ground control point requires two clicks&mdash;one in the left panel and one in the right. This records a linkage between a spot on the original map document and the real-world latitude/longitude coordinates for that location.
 
 ![Once 3 control points are present, a semi-transparent preview will appear.](../../static/img/alex-3-georeference.jpg)
 
@@ -36,6 +34,10 @@ Deleting a control point:
 
 - Select an existing control point via the list in the bottom left, or by clicking on it in the panels.
 - Click <i class="fa fa-trash"></i> or type <code>d</code> to delete.
+
+:::caution
+There is currently an error that causes ground control points to get scrambled when is deleted.
+:::
 
 Saving Control Points:
 

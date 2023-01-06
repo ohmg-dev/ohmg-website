@@ -85,15 +85,15 @@ const config = {
             items: [
               {
                 label: 'Navigating the Site',
-                to: '/docs/category/navigating-the-site',
+                to: '/docs/category/navigating-the-site-1',
               },
               {
                 label: 'Making the Mosaics',
-                to: '/docs/category/navigating-the-site',
+                to: '/docs/category/making-the-mosaics-1',
               },
               {
                 label: 'Technical Documentation',
-                to: '/docs/category/technical-docs',
+                to: '/docs/category/technical-documentation-1',
               },
             ],
           },
@@ -106,7 +106,7 @@ const config = {
               },
               {
                 label: 'Sanborn Maps',
-                to: '/docs/category/sanborn-maps',
+                to: '/docs/category/about-sanborn-maps-1',
               },
             ],
           },
