@@ -3,21 +3,3 @@ adam:
   title: Geospatial developer
   url: https://mradamcox.github.io
   image_url: https://static.wixstatic.com/media/e7cfd7_9fdf0d37ea8f40689585563c524c11d1~mv2.png/v1/fill/w_126,h_130,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aksurv-crop.png
-
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
-
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
