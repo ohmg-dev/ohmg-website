@@ -12,33 +12,18 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">About LaHMG</h1>
+        <h1 className="hero__title">OHMG</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs">
-            Docs
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/faq">
-            FAQ
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/blog">
-            Blog
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
-            to="/contact">
-            Contact
+            to="/features">
+            Features
           </Link>
           <Link
             className="button button--secondary button--lg"
             to="https://oldinsurancemaps.net">
-            Main Site &rarr;
+            See it in action!
           </Link>
         </div>
       </div>
@@ -53,8 +38,9 @@ export default function Home() {
       title={siteConfig.title}
       description={siteConfig.tagline}>
       <HomepageHeader />
-      <div style={{backgroundColor:'#123b4f', color:'white'}}>
-      </div>
+      {/* <div style={{backgroundColor:'#123b4f', color:'white'}}>
+      </div> */}
+      <HomepageFeatures />
     </Layout>
   );
 }

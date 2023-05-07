@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'About LaHMG',
-  tagline: 'Documentation, blog, and general information about the Louisiana Historical Map Georeferencer platform. Visit the main site at oldinsurancemaps.net.',
-  url: 'https://about.oldinsurancemaps.net',
+  title: 'OHMG',
+  tagline: 'Online Historical Map Georeferencer (OHMG) is an open source application designed for the collaborative creation of historical map mosaic layers through a multi-step georeferencing process.',
+  url: 'https://www.ohmg.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
-  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'about.oldinsurancemaps.net'}],
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'www.ohmg.dev'}],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -38,8 +38,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/mradamcox/loc-insurancemaps-website',
+          // editUrl: 'https://github.com/mradamcox/ohmg.dev',
         },
         blog: {
           showReadingTime: true,
@@ -55,25 +54,35 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'About',
+        title: 'OHMG',
         logo: {
-          alt: 'About',
+          alt: 'Home',
           href: '/',
-          src: 'img/noun_Map_heavy-colored-with-roadlines.png',
+          src: 'img/teal-cleaned4.png',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
+            type: 'dropdown',
             label: 'Docs',
-          },
+            items: [
+              {
+                type: 'doc',
+                docId: 'index',
+                // position: 'left',
+                label: 'Docs',
+              }
+            ]
+          }          ,
           {to: '/faq', label: 'FAQ', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/contact', label: 'Contact', position: 'left'},
+          {
+            href: '/support',
+            label: 'Support',
+            position: 'left',
+          },
           {
             href: 'https://oldinsurancemaps.net',
-            label: 'Go to LaHMG',
+            label: 'OldInsuranceMaps.net',
             position: 'left',
           },
         ],
@@ -134,6 +143,19 @@ const config = {
         // theme: darkCodeTheme,
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
+      announcementBar: {
+        id: 'in_development',
+        content:
+          'OHMG is in development, an abstraction of the platform built for <a target="_blank" rel="noopener noreferrer" href="#">OldInsuranceMaps.net</a>. Follow along at <a href="https://github.com/mradamcox/ohmg">mradamcox/ohmg</a>.',
+        backgroundColor: '#fafbfc',
+        textColor: '#333333',
+        isCloseable: false,
       },
     }),
 };
