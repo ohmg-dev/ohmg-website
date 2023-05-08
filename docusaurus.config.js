@@ -61,25 +61,41 @@ const config = {
           src: 'img/teal-cleaned4.png',
         },
         items: [
+          {to: '/features', label: 'Features', position: 'left'},
+          {to: '/faq', label: 'FAQ', position: 'left'},
           {
             type: 'dropdown',
             label: 'Docs',
+            // items: [
+            //   {
+            //     type: 'doc',
+            //     docId: 'index',
+            //     // position: 'left',
+            //     label: 'Docs',
+            //   }
+            // ]
             items: [
               {
-                type: 'doc',
-                docId: 'index',
-                // position: 'left',
-                label: 'Docs',
-              }
-            ]
-          }          ,
-          {to: '/faq', label: 'FAQ', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: '/support',
-            label: 'Support',
-            position: 'left',
+                label: 'Navigating the Site',
+                to: '/docs/category/navigating-the-site-1',
+              },
+              {
+                label: 'Making the Mosaics',
+                to: '/docs/category/making-the-mosaics-1',
+              },
+              {
+                label: 'Technical Documentation',
+                to: '/docs/category/technical-documentation-1',
+              },
+            ],
           },
+          
+          {to: '/blog', label: 'Blog', position: 'left'},
+          // {
+          //   href: '/support',
+          //   label: 'Support',
+          //   position: 'left',
+          // },
           {
             href: 'https://oldinsurancemaps.net',
             label: 'OldInsuranceMaps.net',
@@ -90,7 +106,7 @@ const config = {
       footer: {
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
                 label: 'Navigating the Site',
@@ -152,10 +168,10 @@ const config = {
       announcementBar: {
         id: 'in_development',
         content:
-          'OHMG is in development, an abstraction of the platform built for <a target="_blank" rel="noopener noreferrer" href="#">OldInsuranceMaps.net</a>. Follow along at <a href="https://github.com/mradamcox/ohmg">mradamcox/ohmg</a>.',
+          'OHMG is an in-progress abstraction of the platform built for <a target="_blank" rel="noopener noreferrer" href="https://oldinsurancemaps.net">OldInsuranceMaps.net</a>. Follow along: <a href="https://github.com/mradamcox/ohmg">mradamcox/ohmg</a>.',
         backgroundColor: '#fafbfc',
         textColor: '#333333',
-        isCloseable: false,
+        isCloseable: true,
       },
     }),
 };
