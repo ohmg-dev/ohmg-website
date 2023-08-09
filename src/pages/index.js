@@ -19,7 +19,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="https://oldinsurancemaps.net">
-            See it in action!
+            Implementation: OldInsuranceMaps.net
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://github.com/mradamcox/ohmg">
+            GitHub: mradamcox/ohmg
           </Link>
         </div>
       </div>

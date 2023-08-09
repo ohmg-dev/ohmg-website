@@ -1,34 +1,13 @@
-# Architecture
+# Platform Architecture
 
-:::caution Undocumented changes
-Recently, some [significant refactoring](https://github.com/mradamcox/loc-insurancemaps/issues/99) has been carried out, which is not yet fully reflected here (or completed). Specifically, GeoNode and Geoserver are being phased out in favor of a custom CMS implementation and [Titiler](https://developmentseed.org/titiler/), respectively. I hope to add more information about these change soon.
-:::
+OHMG is a Django app that relies on a handful of non-Django components as well:
 
-Technologically, this platform is the result of a few layered applications.
-
-1. [GeoNode](https://geonode.org) - an open source geospatial content management system
-   Components include: [Django](https://django.org) &#8226;
-   [GeoServer](https://geoserver.org) &#8226;
-   [PostgreSQL](https://postgresql.org)/[PostGIS](https://postgis.net) &#8226;
-   [OpenLayers](https://openlayers.org)
-2. A [Georeference](#the-georeference-app) app - handles all of the georeferencing operations
-   Dependencies added: [MapServer](https://mapserver.org) &#8226;
-   [Svelte](https://svelte.dev)
-3. A [LOC Insurance Maps](#the-loc-insurance-maps-app) app - curates the ingestion and storage of the Sanborn maps Dependencies added: [Svelte](https://svelte.dev)
+- [Svelte](https://svelte.dev) + [OpenLayers](https://openlayers.org) - frontend framework and map interfaces
+- [RabbitMQ](https://www.rabbitmq.com) + [Celery](https://celeryq.dev) - background processing queue
+- [PostgreSQL](https://postgresql.org) + [PostGIS](https://postgis.net) - spatial database for GCPs, etc.
+- [TiTiler](https://developmentseed.org/titiler) - dynamic raster tiler for georeferenced maps
 
 
-## GeoNode
-
-[GeoNode](https://geonode.org) is an open source geospatial content management system that can function as a geospatial data portal, allowing organizations to publish and curate their spatial datasets. It has been implemented by non-profit and governmental entities [around the world](https://geonode.org/gallery/).
-
-Choosing GeoNode as the base for this georeferencing platform provided the following advantages, to name a few:
-
-- A robust open source tech stack to build from (especially GDAL)
-- A content management system (CMS) for spatial and non-spatial datasets
-- Content integration with a geospatial data server (GeoServer)
-- User registration, account, and permissions management
-- Interactive web map authoring by users
-- An active developer community to join
 
 ## The Georeference App
 
