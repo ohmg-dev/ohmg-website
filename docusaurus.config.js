@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'OHMG',
-  tagline: 'Online Historical Map Georeferencer (OHMG) is an open source application designed for the collaborative creation of historical map mosaic layers through a multi-step georeferencing process.',
+  tagline: 'Online Historical Map Georeferencer (OHMG) is an open source application that facilitates the creation of georeferenced historical map mosaic layers through a collaborative, public process.',
   url: 'https://www.ohmg.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -66,28 +66,28 @@ const config = {
           {
             type: 'dropdown',
             label: 'Docs',
-            // items: [
-            //   {
-            //     type: 'doc',
-            //     docId: 'index',
-            //     // position: 'left',
-            //     label: 'Docs',
-            //   }
-            // ]
             items: [
               {
-                label: 'Navigating the Site',
-                to: '/docs/category/navigating-the-site-1',
-              },
-              {
-                label: 'Making the Mosaics',
-                to: '/docs/category/making-the-mosaics-1',
-              },
-              {
-                label: 'Technical Documentation',
-                to: '/docs/category/technical-documentation-1',
-              },
-            ],
+                type: 'doc',
+                docId: 'index',
+                // position: 'left',
+                label: 'Docs',
+              }
+            ]
+            // items: [
+            //   {
+            //     label: 'Navigating the Site',
+            //     to: '/docs/category/navigating-the-site-1',
+            //   },
+            //   {
+            //     label: 'Making the Mosaics',
+            //     to: '/docs/category/making-the-mosaics-1',
+            //   },
+            //   {
+            //     label: 'Technical Documentation',
+            //     to: '/docs/category/technical-documentation-1',
+            //   },
+            // ],
           },
           
           {to: '/blog', label: 'Blog', position: 'left'},

@@ -36,8 +36,8 @@ export default function Home() {
       <HomepageHeader />
       {/* <div style={{backgroundColor:'#123b4f', color:'white'}}>
       </div> */}
+      <BackgroundSection />
       <HomepageFeatures />
-      {/* <BackgroundSection /> */}
     </Layout>
   );
 }
