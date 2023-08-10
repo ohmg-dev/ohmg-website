@@ -4,7 +4,11 @@ title: Features
 
 # Features
 
-Some of the features of OHMG include...
+:::caution
+
+This and other portions of ohmg.dev are still under development. Thanks for your patience!
+
+:::
 
 ## Handle Complex Content
 
