@@ -8,7 +8,7 @@ Questions, concerns, or feedback? Email any time: <a href="mailto:hello@oldinsur
 
 ## Newsletter
 
-You can subscribe to the [newsletter](https://oldinsurancemaps.net/newsletter) for periodic updates about the site, even if you don't have an account.
+You can subscribe to the [OldInsuranceMaps.net newsletter](https://oldinsurancemaps.net/newsletter) for periodic updates about that project (no need to create an account on the site to get the newsletter).
 
 Newsletter updates will include links to new blog posts (the [blog](/blog) does not have subscriptions as such).
 

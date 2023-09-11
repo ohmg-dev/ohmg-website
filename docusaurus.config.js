@@ -62,32 +62,31 @@ const config = {
         },
         items: [
           {to: '/features', label: 'Features', position: 'left'},
-          {to: '/faq', label: 'FAQ', position: 'left'},
           {
             type: 'dropdown',
             label: 'Docs',
-            items: [
-              {
-                type: 'doc',
-                docId: 'index',
-                // position: 'left',
-                label: 'Docs',
-              }
-            ]
             // items: [
             //   {
-            //     label: 'Navigating the Site',
-            //     to: '/docs/category/navigating-the-site-1',
-            //   },
-            //   {
-            //     label: 'Making the Mosaics',
-            //     to: '/docs/category/making-the-mosaics-1',
-            //   },
-            //   {
-            //     label: 'Technical Documentation',
-            //     to: '/docs/category/technical-documentation-1',
-            //   },
-            // ],
+            //     type: 'doc',
+            //     docId: 'index',
+            //     // position: 'left',
+            //     label: 'Docs',
+            //   }
+            // ]
+            items: [
+              {
+                label: 'Navigating the Site',
+                to: '/docs/category/navigating-the-site-1',
+              },
+              {
+                label: 'Making the Mosaics',
+                to: '/docs/category/making-the-mosaics-1',
+              },
+              {
+                label: 'Technical Documentation',
+                to: '/docs/category/technical-documentation-1',
+              },
+            ],
           },
           
           {to: '/blog', label: 'Blog', position: 'left'},
@@ -119,19 +118,6 @@ const config = {
               {
                 label: 'Technical Documentation',
                 to: '/docs/category/technical-documentation-1',
-              },
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'FAQ',
-                to: '/faq',
-              },
-              {
-                label: 'Sanborn Maps',
-                to: '/docs/category/about-sanborn-maps-1',
               },
             ],
           },
