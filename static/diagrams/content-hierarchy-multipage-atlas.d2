@@ -1,0 +1,35 @@
+classes: {
+    d: {
+        style: {
+            stroke-dash: 3
+            border-radius: 5
+        }
+    }
+}
+
+user: ""
+user.text: |md
+Primary Level of User Engagement
+- search for concent
+- access individual documents for georeferencing
+|
+
+user.map1: ""
+user.map1.text: |md
+#### Multi-page Atlas
+- two (or more) scanned documents
+- each document can be split to multiple pieces<br/>(necessary to handle insets)
+|
+doc1: Document 1
+doc2: Document 2
+
+user.map1 -> doc1
+user.map1 -> doc2
+
+lyr1: Layer 1
+lyr2a: Layer 2a
+lyr2b: Layer 2b
+
+doc1 -> lyr1
+doc2 -> lyr2a
+doc2 -> lyr2b

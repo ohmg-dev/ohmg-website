@@ -61,40 +61,9 @@ const config = {
           src: 'img/teal-cleaned4.png',
         },
         items: [
-          {to: '/features', label: 'Features', position: 'left'},
-          {
-            type: 'dropdown',
-            label: 'Docs',
-            // items: [
-            //   {
-            //     type: 'doc',
-            //     docId: 'index',
-            //     // position: 'left',
-            //     label: 'Docs',
-            //   }
-            // ]
-            items: [
-              {
-                label: 'Navigating the Site',
-                to: '/docs/category/navigating-the-site-1',
-              },
-              {
-                label: 'Making the Mosaics',
-                to: '/docs/category/making-the-mosaics-1',
-              },
-              {
-                label: 'Technical Documentation',
-                to: '/docs/category/technical-documentation-1',
-              },
-            ],
-          },
-          
+          {to: '/concepts', label: 'Concepts', position: 'left'},          
+          {to: '/developers', label: 'Developers', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: '/support',
-          //   label: 'Support',
-          //   position: 'left',
-          // },
           {
             href: 'https://oldinsurancemaps.net',
             label: 'OldInsuranceMaps.net',
@@ -105,36 +74,11 @@ const config = {
       footer: {
         links: [
           {
-            title: 'Documentation',
+            title: 'Connect',
             items: [
-              {
-                label: 'Navigating the Site',
-                to: '/docs/category/navigating-the-site-1',
-              },
-              {
-                label: 'Making the Mosaics',
-                to: '/docs/category/making-the-mosaics-1',
-              },
-              {
-                label: 'Technical Documentation',
-                to: '/docs/category/technical-documentation-1',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'Contact',
-                to: '/contact',
-              },
               {
                 label: 'GitHub',
-                href: 'https://github.com/mradamcox/loc-insurancemaps',
+                href: 'https://github.com/ohmg-dev',
               },
             ],
           },

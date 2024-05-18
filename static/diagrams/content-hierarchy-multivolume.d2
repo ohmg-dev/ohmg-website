@@ -1,0 +1,42 @@
+classes: {
+    d: {
+        style: {
+            stroke-dash: 3
+            border-radius: 5
+        }
+    }
+}
+
+multi: Multi-Volume Atlas
+
+user: ""
+user.class: d
+user.text: |md
+Primary Level of User Engagement
+- search for maps
+- access individual documents for georeferencing
+|
+
+user.map1: Volume 1
+user.map2: Volume 2
+
+doc1: Document 1
+doc2: Document 2
+doc3: Document 3
+
+user.map1 -> doc1
+user.map2 -> doc2
+user.map2 -> doc3
+
+lyr1: Layer 1
+lyr2: Layer 2
+lyr3a: Layer 3a
+lyr3b: Layer 3b
+
+doc1 -> lyr1
+doc2 -> lyr2
+doc3 -> lyr3a
+doc3 -> lyr3b
+
+multi -> user.map1
+multi -> user.map2

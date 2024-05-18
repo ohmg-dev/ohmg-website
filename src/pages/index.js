@@ -23,8 +23,8 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="https://github.com/mradamcox/ohmg">
-            GitHub: mradamcox/ohmg
+            to="https://github.com/ohmg-dev/OldInsuranceMaps">
+            GitHub: ohmg-dev/OldInsuranceMaps
           </Link>
         </div>
       </div>

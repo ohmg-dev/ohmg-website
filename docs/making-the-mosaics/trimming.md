@@ -4,10 +4,8 @@ sidebar_position: 3
 
 # Trimming the Layers
 
-Overlapping edges of layers cause messy mosaics, so a mask must be added to each layer to remove its margins. These masks should all be contiguous (sharing adjacent borders and vertices) so it is best to handle them at the volume-level, not by masking each layer individually.
+:::tip New Docs home...
+Because the primarily serves the OldInsuranceMaps.net implementation of OHMG, I've moved it to: [docs.oldinsurancemaps.net](https://docs.oldinsurancemaps.net). Please update any bookmarks accordingly!
 
-:::caution Work in Progress
-This tool is still very much in a protoype phase: it is functional, but also finicky and obtuse. See for yourself: [Baton Rouge, 1908](https://oldinsurancemaps.net/loc/trim/sanborn03275_005/).
+If you are looking for technical info on how to implement this software, see [developers](/developers).
 :::
-
-![The multitrim interface.](../../static/img/multitrim.gif)

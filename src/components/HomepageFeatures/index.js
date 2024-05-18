@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun-book-3124501.svg').default,
     description: (
       <>
-        Multi-document items, like atlases, are first-class citizens, with full support for multiple maps on each sheet and multiple content scales across the atlas. <a href="/features#handle-complex-content">Learn more...</a>
+        Multi-document items, like atlases, are first-class citizens, with full support for multiple maps on each sheet and multiple content scales across the atlas. <a href="/concepts#handle-complex-content">Learn more...</a>
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun_Users_1236015.svg').default,
     description: (
       <>
-        An iterative, componentized workflow provides direct access for any user to contribute at any stage in the overall process. <a href="/features#collaborative-model">Learn more...</a>
+        An iterative, componentized workflow provides direct access for any user to contribute at any stage in the overall process. <a href="/concepts#collaborative-model">Learn more...</a>
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun_FoldedMap_2592599.svg').default,
     description: (
       <>
-        Margins are removed from adjacent map layers by creating a "multimask" across the entire item, rather than trimming each layer independently. <a href="/features#seamless-mosaics">Learn more...</a>
+        Margins are removed from adjacent map layers by creating a "multimask" across the entire item, rather than trimming each layer independently. <a href="/concepts#seamless-mosaics">Learn more...</a>
       </>
     ),
   },
@@ -35,7 +35,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun_Scroll_2592600.svg').default,
     description: (
       <>
-        Backed by GDAL, any standard transformation algorithms can be used for GCPs, and any projection can be targeted. <a href="/features#transformations--projections">Learn more...</a>
+        Any standard transformation algorithms can be used for GCPs, and any projection can be targeted. <a href="/concepts#transformations--projections">Learn more...</a>
       </>
     ),
   },
@@ -44,7 +44,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun_Layer_2583171.svg').default,
     description: (
       <>
-        Layers are immediately published as web services and can easily be integrated into third-party platforms, like OpenHistoricalMap and Felt. <a href="/features#web-services">Learn more...</a>
+        Layers are immediately published as web services and can easily be integrated into third-party platforms, like OpenHistoricalMap and Felt. <a href="/concepts#web-services">Learn more...</a>
       </>
     ),
   },
@@ -53,7 +53,7 @@ const FeatureList = [
     Svg: require('@site/static/icons/noun_map pin_1832932.svg').default,
     description: (
       <>
-         A simple API can provide researchers with programmatic access to GCPs, cutlines, and GeoTIFF download links. <a href="/features#data-api">Learn more...</a>
+         A simple API can provide researchers with programmatic access to GCPs, cutlines, and GeoTIFF download links. <a href="/concepts#data-api">Learn more...</a>
       </>
     ),
   },
