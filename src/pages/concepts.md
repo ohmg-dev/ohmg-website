@@ -30,7 +30,7 @@ This level of aggregation is still in development!
 
 Finally, a light-weight grouping mechanism will allow for multiple volumes from the same atlas to be handled together.
 
-![simple map diagram](../../static/diagrams/content-hierarchy-multipage-atlas.png)
+![simple map diagram](../../static/diagrams/content-hierarchy-multivolume.png)
 
 ### Splitting Insets
 
