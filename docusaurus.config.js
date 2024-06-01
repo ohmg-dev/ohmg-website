@@ -62,7 +62,7 @@ const config = {
         },
         items: [
           {to: '/concepts', label: 'Concepts', position: 'left'},          
-          {to: '/developers', label: 'Developers', position: 'left'},
+          {to: '/getting-started', label: 'Getting Started', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://oldinsurancemaps.net',
@@ -83,7 +83,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}`,
+        copyright: `Copyright © ${new Date().getFullYear()}  |  Icons: Alex Muravev, via Noun Project`,
       },
       prism: {
         // theme: darkCodeTheme,

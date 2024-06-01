@@ -38,10 +38,27 @@ Because it is common for historical maps to have insets, or just multiple maps o
 
 ![examples of splitting](../../static/img/split-example-3page-anno.jpg)
 
+The image above illustrates how three pages of an atlas would be prepared. The first page split into four regions, the second split into two, and the third would be left as a single, full sheet. After each piece has been georefrenced, there will be seven individual layers.
 
 ## Seamless Mosaics
 
-Margins are removed from adjacent map layers by creating a "multimask" across the entire item, rather than trimming each layer independently.
+Mosaics offer the possibility of creating a single, seamless output layer from multiple sheets of an atlas. It may be helpful to think of mosaics as **layer sets**. While every map would have a layer set called "main content", in complex atlases there may be other categories of layers, for example an index or key map. Layer sets allow multiple types of layers to be combined and trimmed into seamless mosaics.
+
+### Simple Map &ndash; one "mosaic"
+
+In the simplest example, a single scanned map is treated as the "main content" mosaic. This allows it to be trimmed if desired, and places it within the same category as other mosaicked output from more complex atlases.
+
+![single page mosaic](../../static/diagrams/content-hierarchy-simple-mosaic.png)
+
+### Complex Atlas &ndash; multiple mosaics
+
+While every Some multipage atlases may contain multiple categories of layers, a " Even single-page maps are considered "mosaics," in that they are created from the layers within each map. Some maps just have a single layer... this could become a "mosaic of one," so to speak. Margins are removed from adjacent map layers by creating a "multimask" across the entire item, rather than trimming each layer independently. Further
+
+![multiple mosaics](../../static/diagrams/content-hierarchy-multiple-mosaics.png)
+
+### Multimask
+
+A multimask is simply a collection of masks across all the layers in a layer set. Its existence facilitates the trimming and mosaicking processes needed to create a single, seamless, output layer.
 
 ## Collaborative Model
 
