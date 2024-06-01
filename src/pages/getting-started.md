@@ -92,6 +92,12 @@ source ./scripts/create_database.sh
 
 ### Install Django project
 
+Clone the repo
+
+```bash
+git clone https://github.com/ohmg-dev/OldInsuranceMaps && cd OldInsuranceMaps
+```
+
 Make virtual env
 
 ```bash
@@ -102,8 +108,8 @@ source env/bin/activate
 Install Python deps
 
 ```bash
-git clone https://github.com/ohmg-dev/OldInsuranceMaps && cd OldInsuranceMaps
 pip install -r requirements.txt
+pip install -r requirements_dev.txt
 ```
 
 Set environment variables
