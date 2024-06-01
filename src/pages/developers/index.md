@@ -1,6 +1,6 @@
 # Getting Started
 
-OHMG is open source software that can be self-hosted for your own georeferencing projects. This page has an overview of the platform architecture, as well as the working installation guide. *This is still a work-in-progress!* You can follow development, oir file bugs/requests at [github.com/ohmg-dev/OldInsuranceMaps](https://github.com/ohmg-dev/OldInsuranceMaps).
+OHMG is open source software that can be self-hosted for your own georeferencing projects. This page has an overview of the platform architecture, as well as the working installation guide. *This is still a work-in-progress!* You can follow development, or file bugs/requests at [github.com/ohmg-dev/OldInsuranceMaps](https://github.com/ohmg-dev/OldInsuranceMaps).
 
 - [Software Components](/developers/architecture)
 - [Development Installation](/developers/install)
