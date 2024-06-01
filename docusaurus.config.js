@@ -62,7 +62,7 @@ const config = {
         },
         items: [
           {to: '/concepts', label: 'Concepts', position: 'left'},          
-          {to: '/getting-started', label: 'Getting Started', position: 'left'},
+          {to: '/developers', label: 'For Developers', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://oldinsurancemaps.net',

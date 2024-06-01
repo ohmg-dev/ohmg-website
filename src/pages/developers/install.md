@@ -1,39 +1,8 @@
-# Getting Started
-
-OHMG is open source software that can be self-hosted for your own georeferencing projects. This page has an overview of the platform architecture, as well as the working installation guide. *This is still a work-in-progress!* You can follow development at [github.com/ohmg-dev/OldInsuranceMaps](https://github.com/ohmg-dev/OldInsuranceMaps).
-
-:::info Looking for old maps?
-
-If you are looking for information about georeferencing Sanborn maps with OldInsuranceMaps.net, see [docs.oldinsurancemaps.net](https://docs.oldinsurancemaps.net).
-:::
-
-:::caution Under development...
-
-Please understand this software is in a pre-beta mode, so both the installation process and the platform itself still have rough edges! 
-:::
-
-## Software Details
-
-OHMG is built with [Django](https://www.djangoproject.com/), with a frontend mostly made from [Svelte](https://svelte.dev) components. [OpenLayers](https://openlayers.org) is the JavaScript library for all map interfaces, and the basemaps come from [OpenStreetMap](https://openstreetmap.org) and [Mapbox](https://mapbox.com).
-
-### Third-party Django Apps
-
-- [Django Ninja](https://django-ninja.rest-framework.com) - API
-- [Django Newsletter](https://github.com/jazzband/django-newsletter) - Newsletter (optional feature)
-
-### External Dependencies
-
-- Postgres + [PostGIS](https://postgis.net/)
-- Celery + RabbitMQ
-- GDAL >= 3.5
-- [TiTiler](https://developmentseed.org/titiler)
-- NodeJS / npm
-
-## Development Installation
+# Development Installation
 
 Running the application requires a number of components to be installed and configured properly. This aspect of the application is not optimized, but slowly getting better.
 
-### System Requirements (Ubuntu 24.04)
+## System Requirements (Ubuntu 24.04)
 
 ```
 sudo apt update && sudo apt upgrade -y
@@ -48,7 +17,7 @@ gdalinfo --version
 
 [Installation instructions for Node.js](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-24-04).
 
-#### Postgres/PostGIS Install
+### Postgres/PostGIS Install
 
 There are plenty of ways to install Postgres/PostGIS, including using hosted services like AWS RDS. The following steps illustrate how a local install on Ubuntu 24.04 can be carried out.
 
@@ -73,7 +42,7 @@ Edit `/etc/postgresql/15/main/pg_hba.conf`.
 sudo service postgresql restart
 ```
 
-### Create database
+## Create database
 
 With Postgres/PostGIS running, create a database like this
 
@@ -90,7 +59,7 @@ export DB_PASSWORD=your_password
 source ./scripts/create_database.sh
 ```
 
-### Install Django project
+## Install Django project
 
 Clone the repo
 
@@ -136,7 +105,7 @@ Load all the `Place` objects to create geography scaffolding
 python manage.py place import-all
 ```
 
-### Build frontend
+## Build frontend
 
 The frontend uses a suite of independently built svelte components.
 
@@ -146,7 +115,7 @@ pnpm install
 pnpm run dev
 ```
 
-### Run Django dev server
+## Run Django dev server
 
 You can now run
 
@@ -160,7 +129,7 @@ and view the site at `http://localhost:8000`.
 
 However, a few more components will need to be set up independently for the app to be fully functional. Complete the following sections and then restart the dev server so that new `.env` content will be used.
 
-### RabbitMQ + Celery
+## RabbitMQ + Celery
 
 In development, RabbitMQ can be run via Docker like so:
 
@@ -188,7 +157,7 @@ Now you are ready to run Celery in development with:
 source ./scripts/celery_dev.sh
 ```
 
-### TiTiler
+## TiTiler
 
 TiTiler can also be run via Docker, using a slightly modified version of the official container (it is only modified to include the WMS endpoint extension):
 
@@ -213,7 +182,7 @@ This will start a container running TiTiler and expose it to `localhost:8008`.
 
 Make sure you have `TITILER_HOST=http://localhost:8008` in `.env`.
 
-### Static file server
+## Static file server
 
 One hitch during development is that neither the Django dev server nor Python's http.server server range requests (more on this [here](https://code.djangoproject.com/ticket/22479) and [here](https://github.com/python/cpython/issues/86809)), but TiTiler works by requesting specific ranges of COG files. The easiest workaround is to use node's [http-server](https://www.npmjs.com/package/http-server).
 
