@@ -42,7 +42,13 @@ The image above illustrates how three pages of an atlas would be prepared. The f
 
 ## Seamless Mosaics
 
-Mosaics offer the possibility of creating a single, seamless output layer from multiple sheets of an atlas. It may be helpful to think of mosaics as **layer sets**. While every map would have a layer set called "main content", in complex atlases there may be other categories of layers, for example an index or key map. Layer sets allow multiple types of layers to be combined and trimmed into seamless mosaics.
+Mosaics offer the possibility of creating a single, seamless output layer from multiple sheets of an atlas. It may be helpful to think of mosaics as **layer sets**. While every map will have a layer set called "main content", in complex atlases there may be other categories of layers, for example an index or key map. Layer sets allow multiple types of layers to be combined and trimmed into seamless mosaics.
+
+### Multimask
+
+At heart of the mosaic is the idea of a **multimask**, which is simply a collection of masks across all the layers in a layer set. Its existence facilitates the trimming and mosaicking processes needed to create a single, seamless, output layer.
+
+![Multimask, Sanborn Map of New Orleans 1885, Vol. 2](../../static/img/multimask.jpg)
 
 ### Simple Map &ndash; one "mosaic"
 
@@ -52,13 +58,9 @@ In the simplest example, a single scanned map is treated as the "main content" m
 
 ### Complex Atlas &ndash; multiple mosaics
 
-While every Some multipage atlases may contain multiple categories of layers, a " Even single-page maps are considered "mosaics," in that they are created from the layers within each map. Some maps just have a single layer... this could become a "mosaic of one," so to speak. Margins are removed from adjacent map layers by creating a "multimask" across the entire item, rather than trimming each layer independently. Further
+Some multipage atlases may contain multiple categories of layers, for example an index map on the front page, and the rest of the pages showing "main content". Using layer sets accomodates this allowing each georeferenced layer to be sorted into the proper category. After this, a multimask is applied to each set.
 
 ![multiple mosaics](../../static/diagrams/content-hierarchy-multiple-mosaics.png)
-
-### Multimask
-
-A multimask is simply a collection of masks across all the layers in a layer set. Its existence facilitates the trimming and mosaicking processes needed to create a single, seamless, output layer.
 
 ## Collaborative Model
 

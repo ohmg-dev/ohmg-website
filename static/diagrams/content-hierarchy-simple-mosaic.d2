@@ -1,0 +1,35 @@
+classes: {
+    d: {
+        style: {
+            stroke-dash: 3
+            border-radius: 5
+        }
+    }
+}
+
+map1: ""
+map1.text: |md
+#### Simple Map
+- a single scanned document
+|
+
+map1.sh1: Sheet 1
+
+doc1: Document 1
+
+map1.sh1 -> doc1
+
+lyr1: Layer 1
+
+doc1 -> lyr1
+
+mos: ""
+mos.text: |md
+#### Single Layer "Mosaic"
+- a single layer can be trimmed (margins removed)<br/>and will be treated alongside all other mosaics
+|
+
+mos.mos1: Main Content
+
+lyr1 -> mos.mos1
+

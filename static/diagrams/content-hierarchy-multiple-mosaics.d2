@@ -1,0 +1,55 @@
+classes: {
+    d: {
+        style: {
+            stroke-dash: 3
+            border-radius: 5
+        }
+    }
+}
+
+map1: ""
+map1.text: |md
+#### Multi-page Atlas with Complex Content
+- two (or more) scanned documents
+- each document can be split to multiple pieces<br/>(necessary to handle insets)
+|
+
+map1.sh1: Sheet 1
+map1.sh2: Sheet 2
+map1.sh3: Sheet 3
+
+doc1: Document 1
+doc2: Document 2
+doc3a: Document 3a
+doc3b: Document 3a
+
+map1.sh1 -> doc1
+map1.sh2 -> doc2
+map1.sh3 -> doc3a
+map1.sh3 -> doc3b
+
+lyr1: Layer 1
+lyr2: Layer 2
+lyr3a: Layer 3a
+lyr3b: Layer 3b
+
+doc1 -> lyr1
+doc2 -> lyr2
+doc3a -> lyr3a
+doc3b -> lyr3b
+
+user3: ""
+user3.text: |md
+#### Mosaicked Layers
+- each Map will have one or more mosaics
+- a mosaic consists of one or more layers
+- each mosaic within a Map will have a different "type"
+|
+
+user3.mos1: Key Map
+user3.mos2: Main Content
+
+lyr1 -> user3.mos1
+lyr2 -> user3.mos2
+lyr3a -> user3.mos2
+lyr3b -> user3.mos2
